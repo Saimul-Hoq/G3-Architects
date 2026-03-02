@@ -14,6 +14,7 @@ body{
 .text-bold{
     font-size: 2.8rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .display-flex{
@@ -48,12 +49,12 @@ body{
 }
 
 main{
-    max-width: 1440px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 body *> section{
-    margin-top: 130px;
+    margin-top: 5vh;
 }
 
 /* Header Style */
@@ -65,7 +66,9 @@ body *> section{
 }
 
 
-
+.banner{
+    padding-top: 5%;
+}
 .nav-link{
     text-decoration: none;
     font-size: 1.2rem;
@@ -97,23 +100,27 @@ body *> section{
     line-height: 1.625;
     margin-bottom: 32px;
 }
-img{
+.ft-image, .banner-image{
     width: 100%;
 }
 
 /* Feature */
 .feature{
     align-items: center;
+    justify-content: center;
 }
+
 .ft-image-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    width: 50%;
 }
 .ft-content{
     max-width: 537px;
     margin: 0 auto;    
     padding: 5%;
+    width: 50%;
 }
 .ft-heading{
     font-size: 2.8rem;
@@ -127,6 +134,16 @@ img{
 #p3{
     color: #FF900E;
 }
+
+/* Facts Style */
+.fact-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.card{
+    border: 1px solid #FF900E;
+}
 /* Small Devices */
 @media screen and (max-width: 576px){
     .display-flex{
@@ -136,6 +153,18 @@ img{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .ft-image-container{
+        width: 100%;
+    }
+    .ft-content{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .navbar{
+        flex-direction: column;
     }
 }
 
