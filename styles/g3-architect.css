@@ -52,7 +52,7 @@ main{
     margin: 0 auto;
 }
 
-body *> section{
+footer, body *> section{
     padding: 10% 10% 0 10%;
 }
 
@@ -145,6 +145,8 @@ body *> section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 9%;
+    justify-content: center;
+    align-items: center;
 
 }
 .fact-description{
@@ -165,6 +167,35 @@ body *> section{
 .card img{
     flex: 0 0 auto;
 }
+
+/* Sponsor Styles */
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sponsor p{
+    max-width: 542px;
+}
+
+.sponsor-icon-container{
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    text-align: center;
+}
+/* Footer Style */
+.footer-content{
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 1.25rem;
+}
+
 /* Small Devices */
 @media screen and (max-width: 576px){
     .display-flex{
@@ -184,6 +215,17 @@ body *> section{
     .fact-card-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .sponsor{
+        margin-top: 20px;
+    }
+    .sponsor-icon-container{
+       flex-wrap: wrap;
+    }
+    .sponsor-image{
+        width: 30%;
+        margin: 10px;
+    }
+   
     
 }
 
