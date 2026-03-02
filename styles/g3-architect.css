@@ -16,7 +16,11 @@ body{
     font-weight: bold;
     margin: 0;
 }
+.text-semiBold{
+    font-size: 1.25rem;
+    font-weight: 600;
 
+}
 .display-flex{
     display: flex;
 }
@@ -134,6 +138,46 @@ footer, body *> section{
     color: #FF900E;
 }
 
+
+/* Feature2 style */
+.feature2{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.feature2-content{
+    max-width: 580px;
+    width: 50%;
+}
+
+.feature2-card{
+    padding: 30px 42px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 3%;
+}
+.feature2-image-container{
+    max-width: 800px;
+    width: 50%;;
+}
+.feature2-image{
+    width: 100%;
+}
+#border{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.experience-badge p{
+    margin: 0;
+}
+.experience-badge{
+    padding: 4% 3%;
+    margin-left: -100px;
+    margin-top:  -100px;
+}
+
+
 /* Facts Style */
 .card p{
     font-size: 1.25rem;
@@ -188,6 +232,9 @@ footer, body *> section{
     margin-top: 3%;
     text-align: center;
 }
+.sponsor-image{
+    filter: grayscale(100%);
+}
 /* Footer Style */
 .footer-content{
     padding: 20px 0;
@@ -225,16 +272,55 @@ footer, body *> section{
         width: 30%;
         margin: 10px;
     }
+    .feature2{
+        flex-direction: column;
+    }
+    .feature2-content, .feature2-image-container{
+        width: 100%;
+    }
+    .experience-badge{
+        /* font-weight: 600; */
+        /* font-size: 1rem; */
+        margin-left: -30px;
+        margin-top: -100px;
+    }
+    .experience-badge h3 {
+        font-size: 1.5rem; /* smaller size for mobile */
+        font-weight: 600;  /* adjust weight */
+    }
+
+    .experience-badge p {
+        font-size: 0.95rem; /* optional: make the paragraph smaller */
+        font-weight: 400;
+    }
+
+
    
     
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 1100px){
     .navbar{
         flex-direction: column;
     }
     .fact-card-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsor{
+        margin-top: 20px;
+    }
+    .sponsor-icon-container{
+       flex-wrap: wrap;
+    }
+    .sponsor-image{
+        width: 30%;
+        margin: 10px;
+    }
+    .feature2{
+        flex-direction: column;
+    }
+    .feature2-content, .feature2-image  {
+        width: 100%;
     }
 }
 
