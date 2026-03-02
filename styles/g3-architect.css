@@ -157,6 +157,7 @@ footer, body *> section{
     margin: 3%;
 }
 .feature2-image-container{
+    position: relative;
     max-width: 800px;
     width: 50%;;
 }
@@ -173,8 +174,9 @@ footer, body *> section{
 }
 .experience-badge{
     padding: 4% 3%;
-    margin-left: -10%;
-    margin-top:  -10%;
+    position: absolute;
+    left: -100px;
+    bottom: -40px;
 }
 
 
@@ -279,10 +281,8 @@ footer, body *> section{
         width: 100%;
     }
     .experience-badge{
-        /* font-weight: 600; */
-        /* font-size: 1rem; */
-        margin-left: -5%;
-        margin-top: -10%;
+        left: -10px;
+        bottom: -20px;
     }
     .experience-badge h3 {
         font-size: 1.5rem; /* smaller size for mobile */
